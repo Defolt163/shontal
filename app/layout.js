@@ -1,3 +1,4 @@
+import SideMenu from './components/SideMenu/SideMenu';
 import "./globals.css";
 
 export const metadata = {
@@ -8,7 +9,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ru">
-      <body>
+      <body className='flex'>
+        <SideMenu/>
         {children}
       </body>
     </html>

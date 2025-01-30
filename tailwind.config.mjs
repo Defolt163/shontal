@@ -20,9 +20,17 @@ export default {
   				foreground: 'hsl(var(--popover-foreground))'
   			},
   			primary: {
-  				DEFAULT: 'hsl(var(--primary))',
+  				DEFAULT: 'var(--primary)',
   				foreground: 'hsl(var(--primary-foreground))'
   			},
+			menuItems:{
+				DEFAULT: 'var(--menu-items)',
+  				foreground: 'hsl(var(--menuText))'
+			},
+			accentText:{
+				DEFAULT: 'var(--accent-text)',
+  				foreground: 'hsl(var(--accent-text))'
+			},
   			secondary: {
   				DEFAULT: 'hsl(var(--secondary))',
   				foreground: 'hsl(var(--secondary-foreground))'
