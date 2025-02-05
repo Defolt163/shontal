@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function SideMenu(){
     return(
-        <div className='bg-primary text-menuItems h-dvh w-1/4 px-9 pb-14 pt-20 flex flex-col items-center justify-between'>
+        <div className='fixed top-0 left-0 bg-primary text-menuItems h-dvh w-1/4 px-9 pb-14 pt-20 flex flex-col items-center justify-between'>
             <div className='w-full'>
                 <div className='text-menuItems text-3xl text-center mb-12'>
                     <div className='w-max mx-auto'>

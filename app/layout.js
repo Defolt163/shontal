@@ -1,4 +1,5 @@
 import SideMenu from './components/SideMenu/SideMenu';
+import SideMenuFromRestaurant from './components/SideMenu/SideMenuFromRestaurant';
 import "./globals.css";
 
 export const metadata = {
@@ -10,7 +11,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ru">
       <body className='flex bg-globalBackground'>
-        <SideMenu/>
+        {/* <SideMenu/> */}
+        <SideMenuFromRestaurant/>
         {children}
       </body>
     </html>

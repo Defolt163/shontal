@@ -1,6 +1,6 @@
 export default function RestaurantCart(){
     return(
-        <div className='w-1/2 h-dvh p-4 bg-white mx-5 rounded-lg flex flex-col justify-between'>
+        <div className='col-span-2 w-full h-dvh p-4 bg-white rounded-lg flex flex-col justify-between'>
             <div>
                 <h3 className='text-xl font-semibold'>Корзина</h3>
                 <div className='w-full grid grid-cols-2 text-center my-5 rounded-lg p-1 bg-lightMuted'>

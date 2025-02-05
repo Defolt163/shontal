@@ -29,10 +29,13 @@ body {
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
     --global-background: #F5F4F2;
+    --card-button-background: #5E625D;
+    --card-hover-button-background: #424342;
     --primary: #D48166;
     --menu-items: #fff;
     --accent-text: #fff;
     --second-text: #404040;
+    --card-background: #fff;
     --primary-foreground: 0 0% 98%;
     --secondary: 0 0% 96.1%;
     --secondary-foreground: 0 0% 9%;
@@ -101,13 +104,31 @@ body {
   letter-spacing: 0%;
   text-align: center;
   padding: 14px 0;
+  cursor: pointer;
 }
 .button.menu{
   width: 273px;
 }
 .button.cart{
-  cursor: pointer;
   background: var(--primary);
   color: var(--accent-text);
   padding: 20px 19px;
+}
+.button.product_card{
+  background: var(--card-button-background);
+  color: var(--accent-text);
+  padding: 12px 0;
+  transition: background .2s;
+}
+.button.product_card:hover{
+  background: var(--card-hover-button-background);
+  transition: background .3s;
+}
+
+.order-input{
+  box-sizing: border-box;
+  border: 1px solid rgb(148, 148, 148);
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+  padding: 4px 19px;
 }
