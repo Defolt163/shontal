@@ -12,7 +12,7 @@ export default function SideMenu(){
                     </div>
                 </div>
                 <input className='w-full text-primary p-4 rounded-md mx-auto' placeholder='Найти еду или ресторан'/>
-                <div className='w-full mt-16 text-menuItems'>
+                <div className='w-full my-10 text-menuItems'>
                     <div className=''>Категории</div>
                     <ul className='ml-12'>
                         <li className='my-3 cursor-pointer'>Шашлык</li>

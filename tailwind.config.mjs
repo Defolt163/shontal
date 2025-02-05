@@ -31,12 +31,24 @@ export default {
 				DEFAULT: 'var(--accent-text)',
   				foreground: 'hsl(var(--accent-text))'
 			},
+			secondaryText: {
+  				DEFAULT: 'var(--second-text)',
+  				foreground: 'hsl(var(--secondary-foreground))'
+  			},
+			globalBackground: {
+  				DEFAULT: 'var(--global-background)',
+  				foreground: 'var(--global-background)'
+  			},
   			secondary: {
   				DEFAULT: 'hsl(var(--secondary))',
   				foreground: 'hsl(var(--secondary-foreground))'
   			},
-  			muted: {
-  				DEFAULT: 'hsl(var(--muted))',
+  			lightMuted: {
+  				DEFAULT: 'var(--light-muted)',
+  				foreground: 'var(--light-muted)'
+  			},
+			muted: {
+  				DEFAULT: 'var(--muted)',
   				foreground: 'hsl(var(--muted-foreground))'
   			},
   			accent: {
