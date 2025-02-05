@@ -105,3 +105,9 @@ body {
 .button.menu{
   width: 273px;
 }
+.button.cart{
+  cursor: pointer;
+  background: var(--primary);
+  color: var(--accent-text);
+  padding: 20px 19px;
+}
