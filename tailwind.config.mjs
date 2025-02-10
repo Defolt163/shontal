@@ -21,7 +21,7 @@ export default {
   			},
   			primary: {
   				DEFAULT: 'var(--primary)',
-  				foreground: 'hsl(var(--primary-foreground))'
+  				foreground: 'var(--primary-foreground)'
   			},
 			menuItems:{
 				DEFAULT: 'var(--menu-items)',
@@ -81,5 +81,9 @@ export default {
   		}
   	}
   },
+  safelist: [
+    'max-[450px]:grid-cols-1',
+	'[max-lg]:mb-4',
+  ],
   plugins: [require("tailwindcss-animate")],
 };

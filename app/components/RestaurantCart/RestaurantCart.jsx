@@ -1,6 +1,13 @@
+'use client'
+import { useContext, useEffect, useState } from 'react'
+import { useGetWidth } from '@/app/context/GetWidth/GetWidth'
+
 export default function RestaurantCart(){
-    return(
-        <div className='col-span-2 w-full h-dvh p-4 bg-white rounded-lg flex flex-col justify-between'>
+    const {width} = useGetWidth()
+
+    const cartWindowsRender = ()=> {
+        if(width > 1536){return(
+        <div className=' sticky top-0 left-0 col-span-2 w-full h-[calc(100dvh-2rem)] p-4 bg-white rounded-lg flex flex-col justify-between'>
             <div>
                 <h3 className='text-xl font-semibold'>Корзина</h3>
                 <div className='w-full grid grid-cols-2 text-center my-5 rounded-lg p-1 bg-lightMuted'>
@@ -32,6 +39,15 @@ export default function RestaurantCart(){
                 <div className='text-muted font-medium text-lg py-3'>Доставка - <span className='text-green-800'>бесплатно</span></div>
                 <div className='button cart flex justify-between'>Оформить <span>450р</span></div>
             </div>
-        </div>
-    )
+        </div>)
+        }else{
+        return(
+            <div className='fixed w-[calc(100%-191px)] bg-primary-foreground bottom-0 rounded-t-lg px-4 py-4 max-lg:w-full'>
+                <h2 className='text-center text-menuItems mb-2'>Стоимость доставки: 0р</h2>
+                <div className='button w-full cart mx-auto flex justify-between'>Корзина <span>500p</span></div>
+            </div>
+        )
+    }
+    }
+    return (cartWindowsRender())
 }

@@ -1,5 +1,6 @@
 import SideMenu from './components/SideMenu/SideMenu';
 import SideMenuFromRestaurant from './components/SideMenu/SideMenuFromRestaurant';
+import { GetWidthProvider } from './context/GetWidth/GetWidth';
 import "./globals.css";
 
 export const metadata = {
@@ -9,12 +10,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="ru">
-      <body className='flex bg-globalBackground'>
-        {/* <SideMenu/> */}
-        <SideMenuFromRestaurant/>
-        {children}
-      </body>
-    </html>
+    <GetWidthProvider>
+      <html lang="ru">
+        <body className='flex bg-globalBackground pl-[191px]- pl-[464px]'>
+          <SideMenu/>
+          {/* <SideMenuFromRestaurant/> */}
+          {children}
+        </body>
+      </html>
+    </GetWidthProvider>
   );
 }
